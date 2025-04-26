@@ -61,7 +61,8 @@ export default function Home() {
               <div className="relative h-[350px] rounded-lg bg-muted p-6 shadow-lg">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/5 rounded-lg" />
                 <div className="relative h-full flex items-center justify-center">
-                 
+                  {/* Image removed */}
+                </div>
               </div>
             </div>
           </div>
@@ -198,76 +199,40 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="border-t bg-muted/50">
-        <div className="container px-4 md:px-6 py-8">
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <footer className="bg-background py-6">
+        <div className="container px-4 md:px-6">
+          <div className="flex justify-between">
             <div>
-              <h3 className="text-lg font-semibold mb-4">SkillConnect</h3>
-              <p className="text-sm text-muted-foreground">Connecting talent with opportunities worldwide.</p>
+              <Link href="/" className="text-xl font-bold text-primary">
+                SkillConnect
+              </Link>
             </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">For Talent</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link href="/find-jobs" className="text-muted-foreground hover:text-foreground">
-                    Browse Jobs
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/create-profile" className="text-muted-foreground hover:text-foreground">
-                    Create Profile
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/success-stories" className="text-muted-foreground hover:text-foreground">
-                    Success Stories
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">For Employers</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link href="/find-talent" className="text-muted-foreground hover:text-foreground">
-                    Browse Talent
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/post-job" className="text-muted-foreground hover:text-foreground">
-                    Post a Job
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/pricing" className="text-muted-foreground hover:text-foreground">
-                    Pricing
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Company</h3>
-              <ul className="space-y-2 text-sm">
-                <li>
-                  <Link href="/about" className="text-muted-foreground hover:text-foreground">
-                    About Us
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/contact" className="text-muted-foreground hover:text-foreground">
-                    Contact
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/privacy" className="text-muted-foreground hover:text-foreground">
-                    Privacy Policy
-                  </Link>
-                </li>
-              </ul>
+            <div className="flex space-x-6">
+              <Link href="/home" className="text-sm text-muted-foreground">Home</Link>
+              <Link href="/about" className="text-sm text-muted-foreground">About Us</Link>
+              <Link href="/plans" className="text-sm text-muted-foreground">Plans</Link>
+              <Link href="/contact" className="text-sm text-muted-foreground">Contact Us</Link>
             </div>
           </div>
-          <div className="mt-8 border-t pt-8 text-center text-sm text-muted-foreground">
-            <p>© {new Date().getFullYear()} SkillConnect. All rights reserved.</p>
+          <div className="flex justify-between mt-6">
+            <div>
+              <h4 className="text-sm font-semibold">Support</h4>
+              <ul>
+                <li>
+                  <Link href="/faq" className="text-sm text-muted-foreground">FAQ</Link>
+                </li>
+                <li>
+                  <Link href="/contact" className="text-sm text-muted-foreground">Contact Us</Link>
+                </li>
+              </ul>
+            </div>
+            <div className="flex items-center">
+              <img src="/ssl-logo.png" alt="SSL Logo" className="h-6 mr-2" />
+              <span className="text-sm text-muted-foreground">Secure Connection</span>
+            </div>
+          </div>
+          <div className="text-center mt-8 text-sm text-muted-foreground">
+            ©2025 SkillConnect Ltd. All Rights Reserved.
           </div>
         </div>
       </footer>
