@@ -61,12 +61,7 @@ export default function Home() {
               <div className="relative h-[350px] rounded-lg bg-muted p-6 shadow-lg">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-primary/5 rounded-lg" />
                 <div className="relative h-full flex items-center justify-center">
-                  <img
-                    src="/placeholder.svg?height=350&width=500"
-                    alt="SkillConnect platform illustration"
-                    className="rounded-md object-cover"
-                  />
-                </div>
+                 
               </div>
             </div>
           </div>
